@@ -1,19 +1,18 @@
-import Header from './components/Cabecalho'
-import Hero from './components/Hero'
-import ListaVagas from './containers/ListaVagas'
-
-import './global.css'
+import Cabecalho from "./components/Cabecalho";
+import Hero from "./components/Hero";
+import FormVagas from "./components/FormVagas";
+import ListaVagas from "./containers/ListaVagas";
+import { Container } from "./styles";
 
 function App() {
   return (
-    <>
-      <Header />
+    <Container>
+      <Cabecalho />
       <Hero />
-      <div className="container">
-        <ListaVagas />
-      </div>
-    </>
-  )
+      <FormVagas />
+      <ListaVagas />
+    </Container>
+  );
 }
 
-export default App
+export default App;
